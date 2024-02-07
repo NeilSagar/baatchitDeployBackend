@@ -14,13 +14,13 @@ const app = express();
 const httpServer = createServer(app);
 
 app.use(cors({
-    origin: 'http://localhost:3000',  
+    origin: 'https://baatchitfronenddeploy.onrender.com',  
     credentials: true,
   },
 ));
 const io = new Server(httpServer, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://baatchitfronenddeploy.onrender.com",
     methods: ["GET", "POST"],
     credentials:true
   }
